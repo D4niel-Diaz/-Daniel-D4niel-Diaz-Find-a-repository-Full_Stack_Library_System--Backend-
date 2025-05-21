@@ -23,11 +23,14 @@ Route::get('/status', function () {
     ]);
 });
 
+
 Route::get('/sanctum/csrf-cookie', function (Request $request) {
     return response()->noContent();
 });
 
+
 Route::post('/auth/change-password', [UserController::class, 'changePassword']);
+
 
 Route::prefix('auth')->group(function () {
     Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
@@ -51,6 +54,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::post('/{book}/borrow', [BookController::class, 'borrow'])->name('books.borrow');
     });
 
+    
     // Transactions
     Route::prefix('transactions')->group(function () {
         Route::get('/stats', [TransactionController::class, 'userStats']);
