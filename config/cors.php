@@ -2,13 +2,19 @@
 
 return [
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie', 'auth/*', 'login', 'register', 'logout'],
+    'paths' => [
+        'api/*',
+        'sanctum/csrf-cookie',
+        'auth/*',
+        'login',
+        'register',
+        'logout',
+    ],
 
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'https://full-stack-frontend-ten.vercel.app',
-        'http://localhost:3000',
+        'https://fullstack-frontends.netlify.app',
     ],
 
     'allowed_origins_patterns' => [],
@@ -19,5 +25,6 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => true, 
+    'supports_credentials' => true,
 ];
+
