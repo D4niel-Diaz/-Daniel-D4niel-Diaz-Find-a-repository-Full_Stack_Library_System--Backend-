@@ -73,7 +73,7 @@ class AdminController extends Controller
                       
                 });
             }
-
+//
             // Sorting
             if ($request->get('sort') === 'latest') {
                 $query->latest();
