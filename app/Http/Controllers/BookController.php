@@ -158,7 +158,7 @@ class BookController extends Controller
 
                 $validated['available_copies'] = $validated['total_copies'] - $borrowedCount;
             }
-
+//
             $book->update($validated);
             DB::commit();
 
