@@ -14,7 +14,7 @@ use Illuminate\Support\Str;
 class Book extends Model
 {
     use HasFactory;
-
+//
     protected $fillable = [
         'title',
         'author',
