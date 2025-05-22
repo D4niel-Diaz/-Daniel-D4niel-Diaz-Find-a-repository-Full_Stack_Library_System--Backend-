@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/sanctum/csrf-cookie', function () {
     return response()->noContent();
 });
-
+//
 Route::get('/', function () {
     return response()->json([
         'message' => 'Welcome to the Library Management API',
