@@ -10,7 +10,7 @@ use Illuminate\Support\Carbon;
 class Transaction extends Model
 {
     use HasFactory;
-
+//
     protected $fillable = [
         'user_id',
         'book_id',
