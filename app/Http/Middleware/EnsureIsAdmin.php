@@ -15,7 +15,7 @@ class EnsureIsAdmin
                 'message' => 'Unauthorized - Admin access required'
             ], 403);
         }
-
+//
         return $next($request);
     }
 }
